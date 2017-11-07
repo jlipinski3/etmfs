@@ -1,0 +1,72 @@
+<style>
+img {border: none}
+a span.screen {display: none}
+body {font-family: arial; font-size: 14px; color: #000000}
+#ticker_left a, #ticker_data a {text-decoration: underline}
+.ticker_row.first {border-top: none}
+#ticker_left {float: left; margin-right: 50px; width: 400px}
+#ticker_input, .review_section {border: 4px solid #cccccc; width: 400px; display: table; background: #ffffff}
+#ticker_input .ticker_row {clear: both; border-top: 1px solid #eeeeee}
+#ticker_input .ticker_cell, .review_section .row > div {float: left}
+#ticker_input .t_leftcol {padding: 7px 10px 7px 0px; text-align: right; font-weight: bold; width: 130px}
+#ticker_input .t_rightcol {padding: 7px 0px 7px 0px; text-align: left; width: 230px}
+#ticker_data {border: 4px solid #cccccc; border-width: 4px 4px 4px 4px; width: 420px; display: table; float: left; visibility: hidden; background: #ffffff}
+.smallticker_cell {font-size: 13px}
+#ticker_data .smallticker_cell.leftside {float: left; text-align: left}
+#ticker_data .smallticker_cell.rightside {float: right; text-align: left}
+#ticker_data .ticker_row {clear: both; border-top: 2px solid #eeeeee}
+#ticker_data .ticker_cell {float: left; width: 195px}
+#ticker_data .t_leftcol {padding: 7px; padding-right: 7px; text-align: right}
+#ticker_data .t_rightcol {padding: 7px; text-align: left; border-left: 2px solid #eeeeee}
+.ticker {font-weight: bold; font-size: 190%; line-height: 100%}
+.refresh_link {font-size: 80%}
+#refresh_time {font-size: 70%}
+.quote_notes {padding: 7px; font-size: 80%}
+.company_name {text-transform: uppercase; font-size: 80%; line-height: 120%}
+.change_mood img {margin-right: 5px}
+#t_close_date, #refresh_time10, #t_intraday_closedate, .small_ticker {font-size: 85%; line-height: 100%}
+#disclaimer_ticker {font-weight: bold}
+.etmf_modal {display: none; padding: 20px; text-align: left}
+.disclaimer {font-size: 14px}
+.disclaimer a, #review_disclosure a {color: #456ab5 ; text-decoration: underline}
+input, select, textarea {color: #000000}
+input {width: 150px }
+input#dialog_check {width: 10px }
+input#submit_button, input.screen_buttons {padding: 2px; font-weight: bold; text-transform: uppercase}
+input#submit_button {width: 80px ; color: #456ab5}
+select {width: 150px }
+#ticker_input li {background-image: none; padding-left: 0px; padding-top: 0px }
+A.tooltips {position:relative; cursor: default; text-decoration: none}
+A.tooltips span {display: none}
+A.tooltips:hover span {display: block; position: absolute; left: 25px; max-width: 300px; min-width: 200px; padding: 5px 7px; top: 3px; background: #fffeee; border: 2px solid #c00000; font-size: 14px; color: #c00000; line-height: 120%; z-index: 1000}
+#limit_warning_box {background: #fffeee; border: 2px solid #c00000; padding: 7px; color: #c00000; margin-top: 3px; font-size: 110%}
+A.tooltips > img {margin-bottom: -3px; margin-left: 5px; border: none}
+A.tooltips span img {max-height: 400px; max-width: 400px}
+#limit_sign {font-size: 140%}
+.review_section, .confirm_section {width: 800px; font-size: 90%; color: #555555; background: #ffffff}
+.review_section .row {clear: both}
+.review_section .row > div {padding-bottom: 3px}
+.review_section > .row {padding: 6px; border-top: 1px solid #eeeeee; vertical-align: middle}
+.review_section .leftcol {width: 50%}
+.review_section .rightcol {width: 50%;}
+.screen_header {background: #eeeeee; font-size: 150%; padding: 8px 0px 8px 6px ; color: #609ed2}
+.review_section .screen_subheader {text-transform: uppercase; padding: 8px; padding-left: 6px; font-size: 110%; border-top: 3px solid #cccccc; background: #f9f9f9; color: #000000}
+.review_section .data_display {font-weight: bold; color: #000000}
+input.screen_buttons {width: auto ; color: #000000; padding: 5px}
+table.section_table {background: #999999; border-spacing: 1px; border-collapse: separate}
+table.section_table td {background: #f9f9f9; font-weight: normal; text-align: right; padding: 5px}
+table.section_table tr.first_row td {background: #dddddd; font-weight: bold; text-align: center}
+.letterhead {padding: 20px 30px 20px 30px; background: #dddddd; color: #000000}
+.letterhead b {font-weight: bold; font-size: 130%}
+.letter_body {padding: 10px 30px 20px 30px; color: #000000}
+.confirm_section {border: 4px solid #cccccc}
+form#order_entry {display: inline}
+#demo_help_dialog table td {text-align: left; white-space: nowrap; background: #ffffff; padding: 3px 5px 3px 5px}
+#demo_help_dialog table tr.odd td {background: #f9f9f9}
+#demo_help_dialog table tr.header td {background: #555555; color: #ffffff}
+#demo_help_dialog table {background: #cccccc; border-collapse: separate; border-spacing: 1px}
+
+ul#header_links li {display: inline-block; padding: 0px 20px; text-transform: uppercase}
+#simplemodal-overlay, .simplemodal-overlay {background-color: #000000}
+#simplemodal-container {background-color: #ffffff; border:8px solid #cccccc;padding: 0px}
+</style>
